@@ -1,0 +1,9 @@
+C:\Users\Alex\source\repos\AFKer\AFKer\bin\Debug\AFKer.exe.config
+C:\Users\Alex\source\repos\AFKer\AFKer\bin\Debug\AFKer.exe
+C:\Users\Alex\source\repos\AFKer\AFKer\bin\Debug\AFKer.pdb
+C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.Form1.resources
+C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.Properties.Resources.resources
+C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.csproj.GenerateResource.cache
+C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.exe
+C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.pdb
