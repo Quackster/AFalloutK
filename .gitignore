@@ -1,0 +1,8 @@
+
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
+obj/Debug/AFKer.csproj.FileListAbsolute.txt
+obj/Debug/AFKer.csprojAssemblyReference.cache
+obj/Debug/AFKer.csproj.FileListAbsolute.txt

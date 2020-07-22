@@ -1,15 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 using System.Diagnostics;
 
 namespace AFKer
@@ -31,16 +24,60 @@ namespace AFKer
             IntPtr h = p.MainWindowHandle;
             SetForegroundWindow(h);
 
+            while (true)
+            {
+                SendKeys.Send("{E 20}");
+                Thread.Sleep((60 * 5) * 1000);
+            }
+        }
+    }
+}
 
-            var random = new Random();
-            
-            var list = new List<string> { "A", "S", "D", "W" };
+/*using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Runtime.InteropServices;
+using System.Diagnostics;
+
+namespace AFKer
+{
+    public partial class Form1 : Form
+    {
+        [DllImport("user32.dll")]
+        static extern bool SetForegroundWindow(IntPtr hWnd);
+
+        [DllImport("user32.dll")]
+        static extern void mouse_event(int dwFlags, int dx, int dy, int dwData, int dwExtraInfo);
+
+        private const int MOUSEEVENTF_MOVE = 0x0001;
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Process p = Process.GetProcessesByName("Fallout76")[0];
+            p.WaitForInputIdle();
+            IntPtr h = p.MainWindowHandle;
+            SetForegroundWindow(h);
+
+            Thread.Sleep(3 * 1000);
+
+            bool alternateCursor = true;
 
             while (true)
             {
-                int seconds = random.Next(1, 10);
-                int index = random.Next(list.Count);
-
+            
                 /*switch (list[index])
                 {
                     case "A":
@@ -55,16 +92,64 @@ namespace AFKer
                     case "W":
                         Keyboard.HoldKey((byte)Keys.W, seconds * 1000);
                         break;
-                }*/
+                }*
 
-                for (int i = 0; i < 1000; i++)
+
+                this.Cursor = new Cursor(Cursor.Current.Handle);
+
+                if (alternateCursor)
                 {
-                    SendKeys.Send(list[index]);
-                    Thread.Sleep(100);
+                    Debug.WriteLine("GET SCRAP FROM RESOURCE MACHINE");
+
+                    Thread.Sleep(1000);
+                    SendKey("{E}");      
+                }
+                else
+                {
+                    Debug.WriteLine("STORE SCRAP");
+
+                    Thread.Sleep(1000);
+                    SendKey("{E}");
+                    SendKey("{T}");
+                    SendKey(" ");
+                    SendKey("{TAB}",20);
                 }
 
-                Thread.Sleep(seconds * 1000);
+                Thread.Sleep(1000);
+
+
+                if (alternateCursor)
+                {
+                    Move(1440, 0);
+                }
+                else
+                {
+                    Move(-1440, 0);
+                }
+
+                alternateCursor = !alternateCursor;
+
+                Thread.Sleep(1000);
             }
+        }
+
+        private void SendKey(string letter, int amount = 10)
+        {
+            for (int i = 0; i < amount; i++)
+            {
+                SendKeys.SendWait(letter);
+            }
+
+            SendKeys.Flush();
+            Thread.Sleep(1000);
+        }
+
+        public static void Move(int xDelta, int yDelta)
+        {
+            int x = xDelta;//(int)(65536.0 / 1920 * xDelta - 1); //convert to absolute coordinates
+            int y = yDelta;//(int)(65536.0 / 1080 * yDelta - 1);
+
+            mouse_event(MOUSEEVENTF_MOVE, x, y, 0, 0);
         }
     }
 
@@ -91,3 +176,4 @@ namespace AFKer
         }
     }
 }
+*/
