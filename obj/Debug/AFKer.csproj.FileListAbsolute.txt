@@ -7,3 +7,12 @@ C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.Properties.Resources.reso
 C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.csproj.GenerateResource.cache
 C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.exe
 C:\Users\Alex\source\repos\AFKer\AFKer\obj\Debug\AFKer.pdb
+C:\Users\Alex\Documents\GitHub\AFalloutK\bin\Debug\AFKer.exe.config
+C:\Users\Alex\Documents\GitHub\AFalloutK\bin\Debug\AFKer.exe
+C:\Users\Alex\Documents\GitHub\AFalloutK\bin\Debug\AFKer.pdb
+C:\Users\Alex\Documents\GitHub\AFalloutK\obj\Debug\AFKer.csprojAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\AFalloutK\obj\Debug\AFKer.Form1.resources
+C:\Users\Alex\Documents\GitHub\AFalloutK\obj\Debug\AFKer.Properties.Resources.resources
+C:\Users\Alex\Documents\GitHub\AFalloutK\obj\Debug\AFKer.csproj.GenerateResource.cache
+C:\Users\Alex\Documents\GitHub\AFalloutK\obj\Debug\AFKer.exe
+C:\Users\Alex\Documents\GitHub\AFalloutK\obj\Debug\AFKer.pdb
