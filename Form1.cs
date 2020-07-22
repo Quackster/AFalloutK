@@ -30,7 +30,7 @@ namespace AFKer
                 SendKeys.Send("{D 2}");
 
                 SendKeys.Send("{E 20}");
-                Thread.Sleep((60 * 5) * 1000);
+                Thread.Sleep((60 * 3) * 1000);
             }
         }
     }
