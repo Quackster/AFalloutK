@@ -29,8 +29,8 @@ namespace AFKer
                 SendKeys.Send("{A 2}");
                 SendKeys.Send("{D 2}");
 
-                SendKeys.Send("{E 20}");
-                Thread.Sleep((60 * 3) * 1000);
+                SendKeys.Send("{W 1000}");
+                Thread.Sleep(10 * 1000);
             }
         }
     }
