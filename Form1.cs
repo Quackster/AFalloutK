@@ -12,7 +12,7 @@ namespace AFKer
         [DllImport("user32.dll")]
         static extern bool SetForegroundWindow(IntPtr hWnd);
 
-        public Form1()
+        public Form1() 
         {
             InitializeComponent();
         }
@@ -26,12 +26,26 @@ namespace AFKer
 
             while (true)
             {
-                SendKeys.Send("{A 2}");
-                SendKeys.Send("{D 2}");
+                /*SendKeys.Send("{A 10}");
+                SendKeys.Send("{D 10}");
 
-                SendKeys.Send("{W 1000}");
-                Thread.Sleep(10 * 1000);
+                SendKeys.Send("{W 200}");
+                SendKeys.Send("{S 200}");*/
+
+                SendKey(" ", 20);
+                Thread.Sleep((new Random().Next(30) + 10) * 1000);
             }
+        }
+
+        private void SendKey(string letter, int amount = 10)
+        {
+            for (int i = 0; i < amount; i++)
+            {
+                SendKeys.SendWait(letter);
+            }
+
+            SendKeys.Flush();
+            //Thread.Sleep(1000);
         }
     }
 }
